@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/main.js" defer></script>
+    <link rel="stylesheet" href="/style.css" />
+    <title>QR Code Generator App</title>
+  </head>
+  <body>
+    <h1 class="title">QR Code</h1>
+    <main>
+      <section id="qr-code-settings" class="container container-front">
+        <header>
+          <h2>Generate your QR Code</h2>
+          <h3>Adjust the settings below to style your QR code</h3>
+        </header>
+        <div>
+          <div class="setting">
+            <label for="data">Text/URL</label>
+            <span class="sub-label">
+              Include a URL or text to where your QR code should lead.
+            </span>
+            <input type="text" id="data" name="date" min="1" max="900" />
+          </div>
+          <div class="colors">
+            <div class="setting">
+              <label for="color">Main Color</label>
+              <input type="color" id="color" value="#000000" />
+              <span id="color-value" class="sub-label">#000000</span>
+            </div>
+            <div class="setting">
+              <label for="bg-color">Background Color</label>
+              <input type="color" id="bg-color" value="#FA8072" />
+              <span id="bg-color-value" class="sub-label">#FA8072</span>
+            </div>
+          </div>
+
+          <div class="setting">
+            <label for="size">Size</label>
+            <span class="sub-label" id="size-value">
+              Adjust the size of your QR code.
+            </span>
+            <input
+              type="range"
+              name="size"
+              id="size"
+              min="100"
+              max="1000"
+              value="200"
+              step="100"
+            />
+          </div>
+          <div class="setting">
+            <label for="margin">Margin</label>
+            <span class="sub-label" id="margin-value">
+              Adjust the margin of your QR code.
+            </span>
+            <input
+              type="range"
+              id="margin"
+              name="margin"
+              min="0"
+              max="100"
+              value="1"
+              step="1"
+            />
+          </div>
+
+          <div class="setting">
+            <fieldset>
+              <legend>Image Format</legend>
+              <div>
+                <input
+                  type="radio"
+                  id="png"
+                  name="format"
+                  value="png"
+                  checked
+                />
+                <label for="png"> PNG </label>
+              </div>
+              <div>
+                <input type="radio" id="gif" name="format" value="gif" />
+                <label for="gif"> GIF </label>
+              </div>
+              <div>
+                <input type="radio" id="jpg" name="format" value="jpg" />
+                <label for="jpg"> JPG </label>
+              </div>
+              <div>
+                <input type="radio" id="svg" name="format" value="svg" />
+                <label for="svg"> SVG </label>
+              </div>
+              <div>
+                <input type="radio" id="jpeg" name="format" value="jpeg" />
+                <label for="jpeg"> JPEG </label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="cta button-box">
+            <button type="submit" id="cta" disabled>Generate QR Code</button>
+          </div>
+        </div>
+      </section>
+      <section id="qr-code-result" class="container container-back">
+        <header>
+          <h2>Your QR Code is ready!</h2>
+          <h3>Scan it to see it in action.</h3>
+        </header>
+        <div class="setting">
+          <img id="qr-code-image" src="" alt="QR Code" />
+        </div>
+        <div class="info">
+          <p>Right click on the QR code to save it to your device.</p>
+          <p>Need to make some changed?</p>
+          <div class="cta">
+            <button type="submit" id="edit">Go back</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
