@@ -23,7 +23,7 @@ body {
   user-select: none;
   overflow: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #3d4451;
+  /* background-color: #3d4451; */
   animation: fadeInAnimation ease-out 3s 1 forwards;
 }
 @keyframes fadeInAnimation {
@@ -73,7 +73,7 @@ select {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 a:hover {
   text-decoration: underline;
@@ -86,8 +86,9 @@ h5,
 h6 {
   overflow-wrap: break-word;
   hyphens: auto;
-  font-weight: 400;
-  color: #000;
+  font-weight: 300;
+  color: #fff;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
 }
 
 .title {
@@ -112,7 +113,7 @@ main {
 }
 .container {
   margin-top: 6rem;
-  background-color: #fff;
+  background-color: #f6a800;
   border-radius: 0.5rem;
   min-width: 22rem;
   width: 50%;
@@ -170,12 +171,19 @@ main {
   margin: 1rem;
   display: flex;
   flex-direction: column;
+  color: #fff;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
 }
 
 .sub-label {
   font-size: 0.9rem;
   margin-bottom: 0.2rem;
   font-weight: 200;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 1;
 }
 
 input[type='text'] {
@@ -186,8 +194,8 @@ input[type='text'] {
   border-radius: 0.5rem;
   font-size: 1rem;
   font-weight: 200;
-  color: #000;
-  background-color: #fff;
+  color: #fff;
+  background-color: #fc503c !important;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -216,11 +224,11 @@ input[type='color'] {
   width: 3rem;
   height: 3rem;
   border-radius: 0.3rem;
-  border: 1px solid rgb(253, 132, 118);
+  border: 1px solid #fc503c;
   margin: 0.5rem 0;
   font-size: 1rem;
   font-weight: 200;
-  color: #000;
+  color: #fff;
   padding: 0.2rem;
   background-color: none;
   -webkit-appearance: none;
@@ -253,7 +261,7 @@ input[type='range'] {
   width: 100%;
   height: 0.4rem;
   border-radius: 0.2rem;
-  background-color: #ffe0dd;
+  background-color: #fc503c;
   outline: none;
   border: none;
   padding: 0;
@@ -269,7 +277,7 @@ input[type='range']::-webkit-slider-thumb {
   height: 1.2rem;
   border-radius: 50%;
   border: 1px solid rgb(255, 49, 26);
-  background-color: rgb(253, 178, 169);
+  background-color: #fff;
   cursor: pointer;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.26);
   transition: all 0.2s ease-out;
@@ -277,7 +285,7 @@ input[type='range']::-webkit-slider-thumb {
 
 input[type='range']::-webkit-slider-thumb:hover,
 input[type='range']::-webkit-slider-thumb:focus {
-  background-color: rgb(253, 132, 118);
+  background-color: #fc503c;
 }
 
 ::-moz-range-track {
@@ -303,7 +311,7 @@ input[type='radio'] {
   background-color: rgb(255, 245, 244);
 }
 input[type='radio']:checked {
-  background-color: rgb(253, 132, 118);
+  background-color: #fc503c;
 }
 input[type='radio']:focus {
   outline: none;
@@ -321,7 +329,7 @@ fieldset legend {
 }
 
 fieldset div {
-  border: 1px solid rgb(253, 132, 118);
+  border: 1px solid #fc503c;
   border-radius: 0.2rem;
   padding: 0.25rem 0.5rem;
   display: flex;
@@ -352,16 +360,17 @@ fieldset div label {
 button {
   width: 95%;
   padding: 0.5rem;
-  border: 1px solid rgb(253, 132, 118);
+  border: 1px solid #fc503c;
   border-radius: 0.3rem;
   font-size: 1.2rem;
   font-weight: 300;
   color: #fff;
-  background-color: rgb(253, 132, 118);
+  background-color: #fc503c;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.26);
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
   cursor: pointer;
   transition: all 0.2s ease-out;
 }

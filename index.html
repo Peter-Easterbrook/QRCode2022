@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="vantajs">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -22,7 +22,14 @@
             <span class="sub-label">
               Include a URL or text to where your QR code should lead.
             </span>
-            <input type="text" id="data" name="date" min="1" max="900" />
+            <input
+              type="text"
+              id="data"
+              name="date"
+              min="1"
+              max="900"
+              placeholder="Your URL..."
+            />
           </div>
           <div class="colors">
             <div class="setting">
@@ -32,8 +39,8 @@
             </div>
             <div class="setting">
               <label for="bg-color">Background Color</label>
-              <input type="color" id="bg-color" value="#FA8072" />
-              <span id="bg-color-value" class="sub-label">#FA8072</span>
+              <input type="color" id="bg-color" value="#fc503c" />
+              <span id="bg-color-value" class="sub-label">#fc503c</span>
             </div>
           </div>
 
@@ -121,5 +128,19 @@
         </div>
       </section>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.cells.min.js"></script>
+    <script>
+      VANTA.CELLS({
+        el: '#vantajs',
+        minHeight: 202.0,
+        minWidth: 200.0,
+        scale: 1,
+        color1: 0x2a,
+        color2: 0x87ff,
+        size: 1.1,
+        speed: 1.4,
+      });
+    </script>
   </body>
 </html>
