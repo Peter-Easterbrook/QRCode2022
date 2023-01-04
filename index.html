@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="module" src="./main.js" defer></script>
+    <script src="./main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>QR Code Generator App</title>
   </head>
@@ -25,10 +31,12 @@
             <input
               type="text"
               id="data"
-              name="date"
+              name="data"
               min="1"
               max="900"
               placeholder="Your URL..."
+              required
+              autofocus
             />
           </div>
           <div class="colors">
@@ -117,7 +125,7 @@
           <h3>Scan it to see it in action.</h3>
         </header>
         <div class="setting">
-          <img id="qr-code-image" src="" alt="QR Code" />
+          <img src="" id="qr-code-image" alt="QR Code" name="qr-code" />
         </div>
         <div class="info">
           <p>Right click on the QR code to save it to your device.</p>

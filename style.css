@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200;300;400;500;600&display=swap');
-/* Set core root defaults */
 html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
@@ -23,7 +21,7 @@ body {
   user-select: none;
   overflow: auto;
   -webkit-font-smoothing: antialiased;
-  /* background-color: #3d4451; */
+  background-color: #000;
   animation: fadeInAnimation ease-out 3s 1 forwards;
 }
 @keyframes fadeInAnimation {
@@ -35,19 +33,8 @@ body {
   }
 }
 
-body::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-body::-webkit-scrollbar-track {
-  background: #3d4451;
-}
-body::-webkit-scrollbar-thumb {
-  background: #8b92a5;
-  border-radius: 10px;
-}
-body::-webkit-scrollbar-thumb:hover {
-  background: #6acae4;
+html::-webkit-scrollbar {
+  display: none;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -120,7 +107,6 @@ main {
   max-width: 32rem;
   min-height: 44rem;
   padding: 1rem;
-
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   -webkit-transform-style: preserve-3d;
@@ -181,7 +167,7 @@ main {
   font-weight: 200;
 }
 
-::placeholder {
+input::placeholder {
   color: #fff;
   opacity: 1;
 }
@@ -242,15 +228,15 @@ input[type='color']:focus {
   border: 2px solid rgb(255, 76, 56);
 }
 
-::-webkit-color-swatch-wrapper {
+input::-webkit-color-swatch-wrapper {
   border: 0;
 }
 
-::-webkit-color-swatch {
+input::-webkit-color-swatch {
   border: 0;
 }
 
-::-moz-color-swatch {
+input::-moz-color-swatch {
   border: 0;
 }
 
@@ -288,13 +274,13 @@ input[type='range']::-webkit-slider-thumb:focus {
   background-color: #fc503c;
 }
 
-::-moz-range-track {
+input::-moz-range-track {
   background: #ffe0dd;
   border: none;
   border-radius: 0.2rem;
 }
-::-moz-focus-inner,
-::-moz-focus-outer {
+input::-moz-focus-inner,
+input::-moz-focus-outer {
   border: 0;
 }
 
