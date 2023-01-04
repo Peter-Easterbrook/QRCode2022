@@ -109,8 +109,8 @@ main {
   max-width: 32rem;
   min-height: 44rem;
   padding: 2rem;
-  /* transform-style: preserve-3d;
-  transform-origin: center; */
+  transform-style: preserve-3d;
+  transform-origin: center;
   backface-visibility: hidden;
   overflow: hidden;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -180,7 +180,6 @@ input::placeholder {
 }
 input[type='text']:focus {
   outline: none;
-  border: 1px solid rgb(255, 81, 61);
 }
 
 .colors {
