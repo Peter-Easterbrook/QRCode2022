@@ -1,8 +1,6 @@
 html {
   background-color: #000;
   scroll-behavior: smooth;
-  scrollbar-width: thin;
-  scrollbar-color: #0074d5 #000;
 }
 *,
 ::after,
