@@ -2,16 +2,16 @@
 <html lang="en" id="vantajs">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./main.js" defer></script>
+    <script type="module" src="/main.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200;300;400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <title>QR Code Generator App</title>
   </head>
   <body>
@@ -26,7 +26,7 @@
           <div class="setting">
             <label for="data">Text/URL</label>
             <span class="sub-label">
-              Include a URL or text to where your QR code should lead.
+              Include a URL to where your QR code should lead.
             </span>
             <input
               type="text"
@@ -134,29 +134,5 @@
         </div>
       </section>
     </main>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.148.0/three.min.js"
-      integrity="sha512-TBsRPqWeusJljmmEij9waZ9K+qO2m6W1pu+5h5BjxvdizD1Izn1wwJyVYNFFFH42tIfedURxTsgtXF2Lah2PXA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.cells.min.js"
-      integrity="sha512-ipaWmngfmwPrgmF/qAMVRKDlzM6KSmQIXTTFuDGltitPFDndMN02da4C6n2PyODzCpPHD0GSBDJjHSuLH+TKnQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script>
-      VANTA.CELLS({
-        el: '#vantajs',
-        minHeight: 202.0,
-        minWidth: 200.0,
-        scale: 1,
-        color1: 0x2a,
-        color2: 0x87ff,
-        size: 1.1,
-        speed: 1.4,
-      });
-    </script>
   </body>
 </html>

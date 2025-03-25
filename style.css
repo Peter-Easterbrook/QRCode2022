@@ -73,7 +73,7 @@ h6 {
   hyphens: auto;
   font-weight: 300;
   color: #fff;
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .title {
@@ -147,13 +147,21 @@ main {
   display: flex;
   flex-direction: column;
   color: #fff;
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-.sub-label {
-  font-size: 0.9rem;
-  margin-bottom: 0.2rem;
-  font-weight: 200;
+.setting label {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.setting .sub-label {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1rem;
+  margin: 0.2rem 0;
+  letter-spacing: 1px;
 }
 
 input[type='text'] {
@@ -296,7 +304,10 @@ fieldset {
   justify-content: space-between;
 }
 fieldset legend {
+  font-size: 1rem;
+  font-weight: 400;
   margin-bottom: 0.5rem;
+  letter-spacing: 1px;
 }
 
 fieldset div {
@@ -340,8 +351,8 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.26);
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
   cursor: pointer;
   transition: all 0.2s ease-out;
 }
@@ -384,6 +395,7 @@ input.error:focus {
   font-size: 1rem;
   width: 80%;
   margin: 0 auto;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
 .info .cta button {
   margin-top: 1rem;
