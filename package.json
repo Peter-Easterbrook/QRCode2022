@@ -13,6 +13,6 @@
     "vanta": "^0.5.24"
   },
   "devDependencies": {
-    "vite": "^6.2.5"
+    "vite": "^6.2.6"
   }
 }
