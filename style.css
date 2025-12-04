@@ -1,6 +1,7 @@
 html {
   background-color: #000;
   scroll-behavior: smooth;
+  height: 100%;
 }
 *,
 ::after,
@@ -11,6 +12,7 @@ html {
   margin: 0;
 }
 body {
+  height: 100%;
   min-height: 100vh;
 
   font-family: 'Encode Sans', sans-serif;
@@ -95,6 +97,8 @@ main {
   transform-origin: center;
   position: relative;
   margin: 0 auto;
+  min-height: 100vh;
+  padding-bottom: 2rem;
 }
 .container {
   position: absolute;
@@ -102,10 +106,10 @@ main {
   margin-top: 6rem;
   background-color: #f6a800;
   border-radius: 0.5rem;
-  min-width: 22rem;
+  min-width: min(22rem, 90vw);
   width: 50%;
   max-width: 32rem;
-  min-height: 44rem;
+  min-height: auto;
   padding: 2rem;
   transform-style: preserve-3d;
   transform-origin: center;
