@@ -1,6 +1,29 @@
 version: 2
+
 updates:
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "npm"
+    directory: "/"
     schedule:
       interval: "weekly"
+      day: "saturday"
+      time: "08:00"
+      timezone: "Europe/Vienna"
+
+    open-pull-requests-limit: 5
+
+    labels: ["dependencies"]
+    commit-message:
+      prefix: "deps"
+
+    groups:
+      vite-tooling:
+        patterns:
+          - "vite"
+          - "@vitejs/*"
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
+      general:
+        patterns:
+          - "*"
