@@ -1,10 +1,8 @@
 // Import required dependencies
-import * as THREE from 'three';
-import CELLS from 'vanta/dist/vanta.cells.min.js';
 import './style.css';
 
 // Initialize VANTA effect
-CELLS({
+window.VANTA.CELLS({
   el: '#vantajs',
   minHeight: 202.0,
   minWidth: 200.0,
@@ -13,7 +11,6 @@ CELLS({
   color2: 0x87ff,
   size: 1.1,
   speed: 1.4,
-  THREE,
 });
 
 //Text
